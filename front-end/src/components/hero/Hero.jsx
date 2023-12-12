@@ -5,7 +5,7 @@ import img from "../../assets/teamWork.jpg";
 const Hero = () => {
   return (
     <div className="flex justify-between items-center my-8 w-[90%] gap-[30%]">
-      <div className="w-[30%]">
+      <div className="w-[40%]">
         <h1 className="font-bold text-2xl">
           What makes a group more productive ?
         </h1>
@@ -19,7 +19,7 @@ const Hero = () => {
         </button>
       </div>
       <div>
-        <img className="w-80" src={img} alt="" />
+        <img className="w-[500px]" src={img} alt="" />
       </div>
     </div>
   );
