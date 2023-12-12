@@ -1,0 +1,3 @@
+.auth-button{
+  @apply bg-black text-center text-white px-5 py-1 rounded-md font-semibold
+}
