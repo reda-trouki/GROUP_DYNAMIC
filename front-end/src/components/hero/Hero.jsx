@@ -4,7 +4,7 @@ import img from "../../assets/teamWork.jpg";
 
 const Hero = () => {
   return (
-    <div className="flex justify-between items-center my-8 w-[90%] gap-[30%]">
+    <div id="hero" className="flex justify-between items-center my-5 pt-4 w-[90%] gap-[30%]">
       <div className="w-[40%]">
         <h1 className="font-bold text-2xl">
           What makes a group more productive ?
