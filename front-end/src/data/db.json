@@ -1,0 +1,286 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "usertitle": "user1",
+      "title": "John Doe"
+    },
+    {
+      "id": 2,
+      "usertitle": "user2",
+      "title": "Jane Smith"
+    },
+    {
+      "id": 3,
+      "usertitle": "user3",
+      "title": "Bob Johnson"
+    }
+  ],
+  "courses": [
+    {
+      "id": 1,
+      "title": "Decision Making",
+      "progress":100,
+      "description": "This  focuses on the process of making effective decisions within a group setting. Participants will explore various decision-making models and strategies to enhance their ability to make informed and collaborative choices.",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Introduction to Decision Making in Groups",
+          "completed": true
+        },
+        {
+          "id": 2,
+          "title": "Decision-Making Models (e.g., Rational Decision-Making Model, Bounded Rationality)",
+          "completed": true
+        },
+        {
+          "id": 3,
+          "title": "Factors Influencing Group Decision Making",
+          "completed": true
+        },
+        {
+          "id": 4,
+          "title": "Group Decision-Making Techniques",
+          "completed": true
+        },
+        {
+          "id": 5,
+          "title": "Consensus Building and Decision Making",
+          "completed": true
+        },
+        {
+          "id": 6,
+          "title": "Handling Decision-Making Challenges",
+          "completed": true
+        },
+        {
+          "id": 7,
+          "title": "Case Studies and Practical Applications",
+          "completed": true
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Communication",
+      "progress": 30,
+      "description": "This  explores the fundamental aspects of communication within a group context. Participants will learn effective communication skills, active listening, and strategies for fostering open and transparent communication in group settings.",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Basics of Group Communication",
+          "completed": true
+        },
+        {
+          "id": 2,
+          "title": "Verbal and Nonverbal Communication",
+          "completed": false
+        },
+        {
+          "id": 3,
+          "title": "Active Listening in Group Settings",
+          "completed": false
+        },
+        {
+          "id": 4,
+          "title": "Overcoming Communication Barriers",
+          "completed": false
+        },
+        {
+          "id": 5,
+          "title": "Constructive Feedback and Critique",
+          "completed": false
+        },
+        {
+          "id": 6,
+          "title": "Technology and Communication Tools for Groups",
+          "completed": false
+        },
+        {
+          "id": 7,
+          "title": "Developing a Communication Plan for Groups",
+          "completed": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Leadership",
+      "progress": 20,
+      "description": "This  focuses on developing leadership skills within a group. Participants will explore different leadership styles, communication strategies, and methods for motivating and guiding a team towards common goals.",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Understanding Leadership in Group Dynamics",
+          "completed": false
+        },
+        {
+          "id": 2,
+          "title": "Leadership Styles and Their Impact",
+          "completed": false
+        },
+        {
+          "id": 3,
+          "title": "Emotional Intelligence in Leadership",
+          "completed": false
+        },
+        {
+          "id": 4,
+          "title": "Decision Making and Leadership",
+          "completed": false
+        },
+        {
+          "id": 5,
+          "title": "Motivation and Team Building",
+          "completed": false
+        },
+        {
+          "id": 6,
+          "title": "Conflict Resolution for Leaders",
+          "completed": false
+        },
+        { "id": 7, "title": "Leading Diverse Groups", "completed": false }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Conflict Management",
+      "progress": 10,
+      "description": "This  addresses the identification and resolution of conflicts within group settings. Participants will learn conflict resolution strategies, negotiation skills, and how to turn conflicts into opportunities for growth.",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Understanding Conflict in Groups",
+          "completed": false
+        },
+        { "id": 2, "title": "Types of Group Conflicts", "completed": false },
+        { "id": 3, "title": "Conflict Resolution Models", "completed": false },
+        {
+          "id": 4,
+          "title": "Negotiation Skills for Groups",
+          "completed": false
+        },
+        {
+          "id": 5,
+          "title": "Mediation and Facilitation Techniques",
+          "completed": false
+        },
+        {
+          "id": 6,
+          "title": "Building a Positive Conflict Resolution Culture",
+          "completed": false
+        },
+        {
+          "id": 7,
+          "title": "Case Studies in Conflict Management",
+          "completed": false
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Norms",
+      "progress": 50,
+      "description": "This  explores the establishment and maintenance of norms within a group. Participants will learn about the importance of shared expectations, rules, and norms in shaping group behavior.",
+      "topics": [
+        { "id": 1, "title": "Introduction to Group Norms", "completed": false },
+        {
+          "id": 2,
+          "title": "The Role of Norms in Group Cohesion",
+          "completed": false
+        },
+        { "id": 3, "title": "Types of Group Norms" },
+        {
+          "id": 4,
+          "title": "Establishing Norms in New Groups",
+          "completed": false
+        },
+        {
+          "id": 5,
+          "title": "Norms and Group Productivity",
+          "completed": false
+        },
+        { "id": 6, "title": "Addressing Norm Violations", "completed": false },
+        {
+          "id": 7,
+          "title": "Group Norms and Organizational Culture",
+          "completed": false
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Roles",
+      "progress": 80,
+      "description": "This  focuses on the definition and distribution of roles within a group. Participants will explore the importance of assigning and fulfilling roles to ensure effective collaboration and task completion.",
+      "topics": [
+        {
+          "id": 1,
+          "title": "The Significance of Roles in Groups",
+          "completed": false
+        },
+        {
+          "id": 2,
+          "title": "Different Types of Group Roles",
+          "completed": false
+        },
+        {
+          "id": 3,
+          "title": "Role Allocation and Assignment",
+          "completed": false
+        },
+        {
+          "id": 4,
+          "title": "Adapting Roles in Changing Group Dynamics",
+          "completed": false
+        },
+        {
+          "id": 5,
+          "title": "Role Conflict and Resolution",
+          "completed": false
+        },
+        {
+          "id": 6,
+          "title": "Leadership and Follower Roles",
+          "completed": false
+        },
+        {
+          "id": 7,
+          "title": "Evaluation and Feedback on Role Performance",
+          "completed": false
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Size",
+      "progress":20,
+      "description": "This  examines the impact of group size on dynamics and functioning. Participants will explore the advantages and challenges associated with different group sizes and strategies for optimizing group performance.",
+      "topics": [
+        {
+          "id": 1,
+          "title": "Understanding Group Size Dynamics",
+          "completed": false
+        },
+        { "id": 2, "title": "Small Group Dynamics", "completed": false },
+        { "id": 3, "title": "Medium-Sized Group Dynamics", "completed": false },
+        { "id": 4, "title": "Large Group Dynamics", "completed": false },
+        {
+          "id": 5,
+          "title": "Teamwork in Different Group Sizes",
+          "completed": false
+        },
+        {
+          "id": 6,
+          "title": "Scaling Strategies for Group Activities",
+          "completed": false
+        },
+        {
+          "id": 7,
+          "title": "Group Size and Decision-Making Processes",
+          "completed": false
+        }
+      ]
+    }
+  ]
+}

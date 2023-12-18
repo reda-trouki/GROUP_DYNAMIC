@@ -1,0 +1,6 @@
+.sections-btn{
+    @apply px-2 py-1 border rounded-full text-center mr-2 hover:bg-blue-300 hover:text-white cursor-pointer;
+}
+.active{
+    @apply bg-blue-300 text-white;
+}

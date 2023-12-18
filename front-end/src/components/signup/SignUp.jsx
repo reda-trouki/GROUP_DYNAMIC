@@ -7,7 +7,7 @@ const SignUp = () => {
       <div className="absolute right-0 text-sm font-thin flex gap-4 mt-2 items-center">
         <p>Already have an account</p>
         <NavLink
-          className="border px-4 py-1 rounded-full hover:bg-violet-300 hover:text-white"
+          className="border px-4 py-1 rounded-full hover:bg-blue-400 hover:text-white"
           to="/auth/login"
         >
           Sign in

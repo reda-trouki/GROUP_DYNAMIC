@@ -2,11 +2,11 @@ import contact from "../../assets/contact.avif";
 
 const Contact = () => {
   return (
-    <div className="w-[90%]" id="contact">
+    <div className="m-auto w-[90%]" id="contact">
       <h3 className="font-semibold text-xl font-mono mx-4 my-5">
         Contact Us :
       </h3>
-      <div className="flex justify-center items-center">
+      <div className="flex justify-center items-center gap-[15%]">
         <form className="max-w-md mx-auto w-[60%]">
           <div className="relative z-0 w-full mb-5 group">
             <input

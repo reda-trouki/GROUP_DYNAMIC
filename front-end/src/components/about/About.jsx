@@ -1,7 +1,7 @@
 
 const Sections = () =>{
     return (
-      <div className="w-[90%]" id="course">
+      <div className="m-auto w-[90%]" id="course">
         <h3 className="font-semibold text-xl font-mono mx-4 my-5">
           Our Course :{" "}
         </h3>

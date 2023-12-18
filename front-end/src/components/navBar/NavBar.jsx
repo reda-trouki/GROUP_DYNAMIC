@@ -45,7 +45,7 @@ const NavBar = () =>{
   }
     return (
       <div
-        className="flex items-center justify-between w-full gap-[30%] top-0 p-4 fixed z-999 bg-white shadow-md transition transform duration-520"
+        className="flex items-center justify-center top-0 w-full gap-[50%] p-2 fixed z-999 bg-white shadow-md transition transform duration-520"
         ref={headRef}
       >
         <div className="flex gap-2 items-center">
