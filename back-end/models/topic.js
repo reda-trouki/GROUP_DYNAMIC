@@ -7,10 +7,10 @@ const topicSchema = new mongoose.Schema({
     },
     completed: {
         type: Boolean,
-        default: false, // Provide a default value or handle it according to your application logic
+        default: false,
     },
 });
 
-const Topic = mongoose.model('topics', topicSchema,'topic');
+const Topic = mongoose.model('Topic', topicSchema, 'topics');
 
 module.exports = Topic;

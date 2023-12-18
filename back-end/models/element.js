@@ -7,20 +7,17 @@ const elementSchema = new mongoose.Schema({
     },
     progress: {
         type: Number,
-        required: true,
+        default: 0,
     },
-    description: {
-        type: String,
-        required: true,
-    },
+    description: String,
     topics: [
         {
             type: mongoose.Schema.Types.ObjectId,
-            ref: 'topics',
+            ref: 'Topic', // Reference to the Topic model
         },
     ],
 });
 
-const Element = mongoose.model('elements', elementSchema,'element');
+const Element = mongoose.model('Element', elementSchema);
 
 module.exports = Element;
