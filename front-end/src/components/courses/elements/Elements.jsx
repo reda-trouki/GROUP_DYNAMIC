@@ -7,7 +7,7 @@ const Sections = () => {
         <p className="font-semibold text-xl">My Learning : </p>
         <div className="my-2">
           <NavLink to="." end className="sections-btn">
-            In Progress
+            In Progress h
           </NavLink>
           <NavLink to="completed" className="sections-btn">
             Completed
