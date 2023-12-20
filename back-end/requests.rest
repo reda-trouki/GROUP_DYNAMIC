@@ -1,0 +1,19 @@
+POST http://localhost:5000/api/v1/auth/login
+Content-Type: application/json
+
+{
+    "email": "Belattar@exemple.com",
+    "password": "123IMAD@ISI__"
+}
+
+###
+
+POST http://localhost:5000/api/v1/auth/signup
+Content-Type: application/json
+
+{
+    "firstName":"Imad",
+    "lastName":"Belattar",
+    "email": "Belattar@exemple.com",
+    "password": "123IMAD@ISI__"
+}

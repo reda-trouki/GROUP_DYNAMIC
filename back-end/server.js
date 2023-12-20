@@ -2,11 +2,16 @@ const mongoose = require('mongoose');
 require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
-const app = express();
-const port = process.env.PORT || 3000;
+
 //importing routes
 const elementRoutes = require('./routes/elementRoute');
+const userRoutes = require('./routes/userRoute');
 
+const app = express();
+const port = process.env.PORT || 3000;
+
+
+app.use(express.json());
 app.use(
     cors({
         origin: "http://localhost:5173",
@@ -32,6 +37,9 @@ app.get('/courses', (req, res) => {
 
 // Append /api/v1 to element routes
 app.use('/api/v1', elementRoutes);
+app.use('/api/v1/', userRoutes);
+
+
 
 
 app.listen(port, () => {
