@@ -24,7 +24,7 @@ const login = async (req, res) => {
 
         const accessTooken = jwt.sign(user.toJSON(), process.env.ACCESS_TOKEN_SECRET)
 
-        res.status(200).json({ message: 'Loged in succefully', accessTooken: accessTooken });
+        res.status(200).json({ message: 'Loged in succefully', accessToken: accessTooken });
     } catch (error) {
         console.error('Error during login:', error);
         res.status(500).json({ message: 'Internal Server Error' });
@@ -62,7 +62,7 @@ const register = async (req, res) => {
 
         const accessTooken = jwt.sign(newUser.toJSON(), process.env.ACCESS_TOKEN_SECRET)
 
-        res.status(200).json({ message: 'Loged in succefully' ,accessTooken: accessTooken });
+        res.status(200).json({ message: 'Loged in succefully' ,accessToken: accessTooken });
     } catch (error) {
         console.error('Error during registration:', error);
         res.status(500).json({ message: 'Internal Server Error' });

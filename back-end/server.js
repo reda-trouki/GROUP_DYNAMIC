@@ -3,6 +3,8 @@ require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 
+const verifyJWT = require('./middleware/verifyJWT');
+
 //importing routes
 const elementRoutes = require('./routes/elementRoute');
 const userRoutes = require('./routes/userRoute');
@@ -30,14 +32,9 @@ app.get('/', (req, res) => {
     res.send('Hello Engineers!');
 });
 
-app.get('/courses', (req, res) => {
-    res.send('courses');
-});
-
-
-// Append /api/v1 to element routes
-app.use('/api/v1', elementRoutes);
 app.use('/api/v1/', userRoutes);
+app.use('/api/v1',verifyJWT, elementRoutes);
+
 
 
 
