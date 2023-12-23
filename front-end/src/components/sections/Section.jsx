@@ -3,14 +3,22 @@ import { useParams } from "react-router-dom";
 import "./Section.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleLeft, faAngleRight, faCircleCheck } from "@fortawesome/free-solid-svg-icons";
+import { useSelector } from "react-redux";
 
 const Section = () => {
   const { id } = useParams();
   const [course, setCourse] = useState();
-  const [show, setShow] = useState(false)
+  const [show, setShow] = useState(false);
+  const accessToken = useSelector((state) => state.accessToken);
 const topicsRef = useRef();
   useEffect(() => {
-    fetch(`http://localhost:5000/api/v1/elements/${id}`)
+    fetch(`http://localhost:5000/api/v1/elements/${id}`, {
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${accessToken}`,
+      },
+    })
       .then((resp) => resp.json())
       .then((data) => {
         setCourse(data[0]);
@@ -56,10 +64,10 @@ const topicsRef = useRef();
               icon={faAngleLeft}
             />
           </h1>
-          <div className="flex-grow flex flex-col gap-4">
+          <div className="flex-grow flex flex-col gap-4 ">
             {course.topics?.map((topic) => (
               <div
-                className="w-full p-4 bg-gray-100 rounded-md shadow-md flex items-center gap-4"
+                className="w-full p-4 bg-gray-100 rounded-md shadow-md flex items-center gap-4 hover:shadow-lg "
                 key={topic._id}
               >
                 { topic.completed && <FontAwesomeIcon className="text-green-700 text-2xl" icon={faCircleCheck} />}
@@ -72,7 +80,7 @@ const topicsRef = useRef();
         <p className="text-center">Loading...</p>
       )}
     </div>
-  );
+  )
 };
 
 export default Section;

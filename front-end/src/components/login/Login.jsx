@@ -1,7 +1,48 @@
+import { useState } from "react";
 import google from "../../assets/google.png";
 import { NavLink } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import { useDispatch } from "react-redux";
 
-const Login = () => {
+
+const Login = ({ setAccessToken }) => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [message, setMessage] = useState("");
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
+
+  const handleLogin = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await fetch("http://localhost:5000/api/v1/auth/login", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          email,
+          password,
+        }),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        setMessage(data.message);
+
+        dispatch(setAccessToken(data.accessToken));
+
+        // Redirect to another page or perform any other action after login
+        navigate("/courses/elements");
+      } else {
+        setMessage(data.error); // or handle the error in another way
+      }
+    } catch (error) {
+      console.error("Error during login:", error);
+    }
+  };
+
   return (
     <div className="relative h-full grid grid-cols-1 content-center w-[100%]">
       <div className="absolute right-0 text-sm font-thin flex gap-4 mt-2 items-center">
@@ -13,14 +54,16 @@ const Login = () => {
           Sign up
         </NavLink>
       </div>
-      <form className="w-[100%] mx-auto mt-[-50px]">
+      <form className="w-[100%] mx-auto mt-[-50px]" onSubmit={handleLogin}>
         <div className="my-4">
           <h2 className="font-bold text-xl">Welcome to Group Dynamic</h2>
           <p className="text-sm font-thin">Connect Your Account</p>
         </div>
-       
+
         <div className="relative z-0 w-full mb-5 group">
           <input
+            onChange={(e) => setEmail(e.target.value)}
+            value={email}
             type="email"
             name="floating_email"
             id="floating_email"
@@ -37,6 +80,8 @@ const Login = () => {
         </div>
         <div className="relative z-0 w-full mb-5 group">
           <input
+            onChange={(e) => setPassword(e.target.value)}
+            value={password}
             type="password"
             name="floating_password"
             id="floating_password"
@@ -51,7 +96,6 @@ const Login = () => {
             Password
           </label>
         </div>
-        
 
         <button
           type="submit"
