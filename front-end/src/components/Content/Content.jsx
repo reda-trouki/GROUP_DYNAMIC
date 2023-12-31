@@ -1,4 +1,4 @@
-import FileContent from "../../lessons/Assign Roles and Responsibilities.md";
+
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { NavLink } from "react-router-dom";
@@ -16,7 +16,7 @@ const Content = ({ element,topic }) => {
       const loadMarkdownFile = async () => {
         try {
           // Dynamically import the file based on a variable
-          const filePath = `../../lessons/${topic.title}.md`;
+          const filePath = `../../lessons/${element}/${topic.title}.md`;
           const { default: content } = await import(filePath);
 
           // Set the content to the state

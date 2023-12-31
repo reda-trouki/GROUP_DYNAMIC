@@ -13,20 +13,32 @@ Well-defined roles contribute to a more efficient workflow. When individuals kno
 ## **Assigning Roles and Responsibilities:**
 
 ### **Identify Expertise:**
-- **Example:**
+<div class="red">
+
+**Example:**
   - In a project involving technology implementation, assign the role of technical lead to the team member with expertise in the relevant technology. This ensures that decisions related to technology align with someone knowledgeable in that area.
+</div>
 
 ### **Leadership Roles:**
-- **Example:**
+<div class="red">
+
+**Example:**
   - Designate a team leader responsible for facilitating discussions, managing conflicts, and ensuring that the decision-making process progresses smoothly. This individual guides the team towards a consensus and oversees the overall decision-making journey.
+</div>
 
 ### **Research and Analysis:**
-- **Example:**
+<div class="red">
+
+**Example:**
   - Assign the responsibility of gathering and analyzing data relevant to the decision to a team member with strong research skills. This ensures that decisions are well-informed and based on a thorough understanding of the facts.
+</div>
 
 ### **Communication Liaison:**
-- **Example:**
+<div class="red">
+
+**Example:**
   - Appoint a communication liaison responsible for keeping team members informed about the progress of the decision-making process. This role ensures that everyone is on the same page and contributes to a transparent and inclusive approach.
+</div>
 
 ## **The Strategic Impact:**
 
@@ -39,12 +51,19 @@ Roles allow team members to leverage their individual strengths and expertise. T
 ## **Navigating Complex Decisions:**
 
 ### **Adaptability to Decision Models:**
-- **Example:**
+<div class="red">
+
+**Example:**
   - In a decision-making model such as the Rational Decision-Making Model, roles can be aligned with specific steps. For instance, one team member may be responsible for gathering information, while another focuses on analyzing alternatives.
+</div>
+
 
 ### **Feedback and Iteration:**
-- **Example:**
+<div class="red">
+
+**Example:**
   - Assign a team member to collect feedback from all stakeholders. This role ensures that diverse perspectives are considered, and the decision-making process can be iterated based on valuable input.
+</div>
 
 ## **Conclusion:**
 

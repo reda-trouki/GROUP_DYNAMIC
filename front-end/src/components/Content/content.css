@@ -18,8 +18,11 @@
     border-right-color: transparent;
 }
 h1{
-    @apply text-3xl font-bold p-4 !important;
+    @apply text-3xl font-bold py-4 !important;
 }
 h2{
-    @apply text-2xl font-bold p-3 !important;
+    @apply text-2xl font-bold py-3 underline !important;
+}
+h3{
+    @apply text-lg font-bold py-2 !important;
 }
