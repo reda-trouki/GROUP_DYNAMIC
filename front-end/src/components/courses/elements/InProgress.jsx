@@ -5,7 +5,6 @@ const InProgress = () => {
   const [courses, setCourses] = useState([]);
   const accessToken = useSelector((state) => state.accessToken);
   useEffect(() => {
-    console.log(localStorage.getItem("accessToken"));
     fetch("http://localhost:5000/api/v1/elements/inProgress", {
       headers: {
         Accept: "application/json",
@@ -15,13 +14,12 @@ const InProgress = () => {
     })
       .then((resp) => resp.json())
       .then((data) => setCourses(data));
-    console.log(courses);
   }, []);
 
   return (
     <div className="flex flex-col gap-6">
       {courses.map((course) => (
-        <Course key={course.id} course={course} />
+        <div key={course._id} ><Course course={course} /></div>
       ))}
     </div>
   );

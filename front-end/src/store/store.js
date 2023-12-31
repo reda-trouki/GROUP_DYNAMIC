@@ -18,9 +18,15 @@ const reducer = (state = initialState, action) => {
 const store = createStore(reducer);
 
 // Action to set the accessToken
-const setAccessToken = (token) => ({
-  type: "SET_ACCESS_TOKEN",
-  payload: token,
-});
+const setAccessToken = (token) => {
+  // Update localStorage
+  sessionStorage.setItem("accessToken", token);
+
+  // Dispatch the action
+  return {
+    type: "SET_ACCESS_TOKEN",
+    payload: token,
+  };
+};
 
 export {store, setAccessToken};

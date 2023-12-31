@@ -10,7 +10,7 @@ const Course = ({course}) => {
     const [completed, isCompleted] = useState(course.topics.filter(topic=> topic.completed));
     
   return (
-    <NavLink to={`/courses/${course._id}`}>
+    <NavLink to={`/courses/${course._id}`} >
       <div className="flex flex-col">
         <div className="text-xs font-semibold text-blue-800 text-right">
           <p>
@@ -36,10 +36,10 @@ const Course = ({course}) => {
                 <div className="flex gap-2">
                   <FontAwesomeIcon icon={faCirclePlay} />
                   <div>
-                    <p className="font-thin text-sm underline text-blue-500">
+                    <p className="font-medium text-sm underline text-blue-500">
                       {pointer.title}
                     </p>
-                    <p className="font-thin text-xs">section {pointer.number}</p>
+                    <p className=" text-xs">section {pointer.number}</p>
                   </div>
                 </div>
               </div>

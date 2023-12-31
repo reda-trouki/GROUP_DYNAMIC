@@ -1,0 +1,25 @@
+.blue, .red{
+   border: 5px solid transparent;
+    
+  padding: 10px;
+  margin-bottom: 15px;
+  background-color: rgb(238, 233, 233)
+}
+.blue{
+    border-color: blue;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+}
+.red{
+    border-color: red;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+}
+h1{
+    @apply text-3xl font-bold p-4 !important;
+}
+h2{
+    @apply text-2xl font-bold p-3 !important;
+}

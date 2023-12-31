@@ -18,7 +18,8 @@ import Section from "./components/sections/Section";
 import { Navigate } from "react-router-dom";
 import { store, setAccessToken } from "./store/store";
 import { useSelector } from "react-redux";
-
+import "typeface-roboto";
+import './App.css';
 function ProtectedRoute({ children }) {
   const token = useSelector((state) => state.accessToken);
 

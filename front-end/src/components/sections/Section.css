@@ -13,9 +13,10 @@
 .custom-scrollbar::-webkit-scrollbar-track {
   background-color: #f1f1f1;
 }
-.closed  {
-    @apply transform translate-x-[-114%] duration-500
+.closed {
+  @apply hidden
 }
-.opened  {
-    @apply transform translate-x-0 duration-500
+
+.opened {
+  @apply block
 }

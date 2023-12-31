@@ -22,7 +22,7 @@ const Completed = () => {
   return (
     <div className="flex flex-col gap-6">
       {courses.map((course) => (
-        <Course key={course.id} course={course} />
+        <div key={course._id}><Course key={course.id} course={course} /></div>
       ))}
     </div>
   );

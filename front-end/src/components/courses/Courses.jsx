@@ -25,7 +25,10 @@ const Courses = ({setAccessToken}) => {
           onClick={() => setShowMenu(!showMenu)}
           className="flex items-center gap-2 px-2 py-1 hover:bg-gray-100"
         >
-          <img className="w-10" src={profile} alt="user" />
+          <div className="flex items-center gap-3">
+            <img className="w-10" src={profile} alt="user" />
+            <p className="font-medium">Reda Trouki</p>
+          </div>
           <div>
             {!showMenu ? (
               <FontAwesomeIcon icon={faAngleDown} />
@@ -36,7 +39,7 @@ const Courses = ({setAccessToken}) => {
         </div>
       </nav>
       <div
-        className={`absolute right-28 w-48 border shadow-md z-999 transform  transition-all duration-300 delay-75 ${
+        className={`absolute bg-white right-24 w-48 border shadow-md z-999 transform  transition-all duration-300 delay-75 ${
           showMenu
             ? "opacity-100 translate-y-0"
             : "opacity-0 translate-y-[-10px] "
@@ -54,7 +57,9 @@ const Courses = ({setAccessToken}) => {
           </li>
         </ul>
       </div>
-      <Outlet />
+      <div className="w-full">
+        <Outlet />
+      </div>
     </div>
   );
 }
