@@ -17,3 +17,11 @@ Content-Type: application/json
     "email": "Belattar@exemple.com",
     "password": "123IMAD@ISI__"
 }
+###
+GET http://localhost:5000/api/v1/elements/completed
+Content-type: application/json
+
+{
+    "_id":"65922661a1a1e8696d53be11"
+}
+

@@ -5,10 +5,10 @@ const topicSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
-    completed: {
-        type: Boolean,
-        default: false,
-    },
+    number:{
+        type: Number,
+        required: true,
+    }
 });
 
 const Topic = mongoose.model('Topic', topicSchema, 'topics');

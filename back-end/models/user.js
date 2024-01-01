@@ -15,10 +15,19 @@ const userSchema = new mongoose.Schema({
     },
     refreshToken: {
         type: String,
-        default: '', // Provide a default value or handle it according to your application logic
+        default: '',
     },
+    progress: [
+        {
+            elementId: {
+                type: mongoose.Schema.Types.ObjectId,
+                ref: 'Element',
+            },
+            completedTopics: [Boolean], // assuming there are 7 topics per element
+        },
+    ],
 });
 
-const User = mongoose.model('User', userSchema,'users');
+const User = mongoose.model('User', userSchema, 'users');
 
 module.exports = User;

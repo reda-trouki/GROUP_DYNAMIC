@@ -1,54 +1,57 @@
 const Element = require('../models/element');
 const Topic = require('../models/topic');
+const User = require('../models/user');
 
-const getElementById = async (req, res) => {
+async function getElementById(req, res) {
     try {
-        const elements = await Element.find({ _id: req.params.id });
+        const AuthUser = req.user;
+        const elementId = req.params.id;
 
-        if (elements.length === 0) {
+        // Find the user by ID
+        const user = await User.findById(AuthUser._id);
+
+        if (!user) {
+            throw new Error('User not found');
+        }
+
+        // Find the element by ID
+        const element = await Element.findById(elementId).populate('topics');
+
+        if (!element) {
             return res.status(404).json({ message: 'Element not found' });
         }
 
-        const elementsTopics = await Promise.all(elements.map(async (element) => {
-            const topics = await Topic.find({ _id: { $in: element.topics } }).lean();
-            return { ...element.toObject(), topics };
-        }));
+        // Find user progress for the element
+        const elementProgress = user.progress.find(
+            (progress) => progress.elementId.toString() === element._id.toString()
+        );
 
-        res.json(elementsTopics);
+        // Get topics details and completion status for the user
+        const topicsWithCompletionStatus = await Promise.all(
+            element.topics.map(async (topicId, index) => {
+                const topic = await Topic.findById(topicId);
+                const completed = elementProgress.completedTopics[index];
+                return {
+                    topicId: topic._id,
+                    title: topic.title,
+                    num: topic.number,
+                    completed: completed,
+                };
+            })
+        );
+
+        return res.status(200).json({
+            elementId: element._id,
+            title: element.title,
+            topics: topicsWithCompletionStatus,
+        });
     } catch (error) {
-        res.status(500).json({ message: 'Error retrieving elements', error: error.message });
+        res.status(400).json({ message: 'Error fetching element' });
+        console.error('Error fetching element:', error.message);
+        throw error;
     }
-};
+}
 
-
-const getCompletedElements = async (req, res) => {
-    try {
-        const elements = await Element.find({ progress: 100 });
-        const elementsTopics = await Promise.all(elements.map(async (element) => {
-            const topics = await Topic.find({ _id: { $in: element.topics } }).lean();
-            return { ...element.toObject(), topics };
-        }));
-        res.json(elementsTopics);
-    } catch (error) {
-        res.status(500).json({ message: 'Error retrieving elements', error: error.message });
-    }
-};
-
-
-const getInprogressElements = async (req, res) => {
-    try {
-        const elements = await Element.find({ progress: { $ne: 100 } });
-        const elementsTopics = await Promise.all(elements.map(async (element) => {
-            const topics = await Topic.find({ _id: { $in: element.topics } }).lean();
-            return { ...element.toObject(), topics };
-        }));
-        res.json(elementsTopics);
-    } catch (error) {
-        res.status(500).json({ message: 'Error retrieving elements', error: error.message });
-    }
-};
 module.exports = {
-    getCompletedElements,
-    getInprogressElements,
     getElementById
 };

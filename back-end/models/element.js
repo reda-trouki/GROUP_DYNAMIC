@@ -18,6 +18,6 @@ const elementSchema = new mongoose.Schema({
     ],
 });
 
-const Element = mongoose.model('Element', elementSchema);
+const Element = mongoose.model('Element', elementSchema, 'elements');
 
 module.exports = Element;
