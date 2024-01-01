@@ -13,7 +13,7 @@ const InProgress = () => {
       },
     })
       .then((resp) => resp.json())
-      .then((data) => setCourses(data));
+      .then((data) => setCourses(data.elementsWithProgress));
   }, []);
 
   return (

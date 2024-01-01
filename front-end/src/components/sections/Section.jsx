@@ -9,6 +9,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { useSelector } from "react-redux";
 import Content from "../Content/Content";
+import Loading from "../Loading/Loading";
 
 const Section = () => {
   const { id } = useParams();
@@ -27,8 +28,8 @@ const Section = () => {
     })
       .then((resp) => resp.json())
       .then((data) => {
-        setCourse(data[0]);
-        setSelectedTopic(data[0].topics[0])
+        setCourse(data);
+        setSelectedTopic(data.topics[0])
       });
   }, [id]);
   const toggleTopics = (isOpen) => {
@@ -93,7 +94,7 @@ const Section = () => {
           </div>
         </div>
       ) : (
-        <p className="text-center">Loading...</p>
+        <Loading/>
       )}
     </div>
   );

@@ -164,7 +164,7 @@ const SignUp = ({ setAccessToken }) => {
         </div>
 
         <button
-          onClick={handleSignUp}
+      onClick={handleSignUp}
           type="submit"
           className="text-white bg-blue-600 px-8 py-2 rounded-2xl shadow-lg hover:bg-blue-500"
         >

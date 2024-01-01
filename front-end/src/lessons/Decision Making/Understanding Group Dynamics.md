@@ -6,6 +6,8 @@
 Group dynamics refer to the interactions and relationships among individuals within a group. In the context of decision-making, it involves how individuals collaborate, communicate, and influence one another to reach a collective outcome. Recognizing and understanding group dynamics is crucial for effective decision-making in organizational settings.
 </div>
 
+<iframe class="m-auto" width="560" height="315" src="https://www.youtube.com/embed/uL6x99-VSBA?si=OflVYbTjCO1RvSKW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 ## Importance of Group Dynamics in Decision Making:
 <div class="my-4"></div>
 

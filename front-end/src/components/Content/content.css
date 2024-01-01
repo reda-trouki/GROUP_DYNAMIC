@@ -3,7 +3,7 @@
     
   padding: 10px;
   margin-bottom: 15px;
-  background-color: rgb(238, 233, 233)
+  background-color: #EEF5FF
 }
 .blue{
     border-color: blue;
@@ -25,4 +25,7 @@ h2{
 }
 h3{
     @apply text-lg font-bold py-2 !important;
+}
+.markdown >*{
+    all:revcert;
 }

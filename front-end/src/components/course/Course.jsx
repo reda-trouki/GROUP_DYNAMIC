@@ -10,7 +10,7 @@ const Course = ({course}) => {
     const [completed, isCompleted] = useState(course.topics.filter(topic=> topic.completed));
     
   return (
-    <NavLink to={`/courses/${course._id}`} >
+    <NavLink to={`/courses/${course.elementId}`}>
       <div className="flex flex-col">
         <div className="text-xs font-semibold text-blue-800 text-right">
           <p>
@@ -39,7 +39,7 @@ const Course = ({course}) => {
                     <p className="font-medium text-sm underline text-blue-500">
                       {pointer.title}
                     </p>
-                    <p className=" text-xs">section {pointer.number}</p>
+                    <p className=" text-xs">section {pointer.num}</p>
                   </div>
                 </div>
               </div>

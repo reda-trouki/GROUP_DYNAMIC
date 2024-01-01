@@ -9,9 +9,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleRight, faCheck, faHouse } from "@fortawesome/free-solid-svg-icons";
 import { useEffect, useState } from "react";
 
+
+
 const Content = ({ element,topic }) => {
     const [fileContent, setFileContent] = useState("");
-
+    
     useEffect(() => {
       const loadMarkdownFile = async () => {
         try {
@@ -49,7 +51,7 @@ const Content = ({ element,topic }) => {
             : topic.title}
         </p>
       </div>
-      <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeRaw]}>
+      <ReactMarkdown className="markdown" remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeRaw]}>
         {fileContent}
       </ReactMarkdown>
       <div>
