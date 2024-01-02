@@ -11,22 +11,22 @@ Dive into the world of group dynamics with our web application powered by the ME
 1. ### Clone the Repository:
 ```bash
 git clone https://github.com/RedaTR/GROUP_DYNAMIC.git
-
+```
 
 2. ### Navigate to Frontend:
 ```bash
 cd GROUP_DYNAMIC/front-end
-
+```
 
 3. ### Install Frontend Dependencies:
 ```bash
 npm install
-
+```
 
 4. ### Run the Frontend:
 ```bash
 npm run dev
-
+```
 
 *Your frontend development server is now running!*
 
@@ -35,17 +35,17 @@ npm run dev
 6. ### Navigate to Backend:
 ```bash
 cd ../back-end
-
+```
 
 7. ### Install Backend Dependencies:
 ```bash
 npm install
-
+```
 
 8. ### Run the Backend:
 ```bash
 npm start
-
+```
 
 *Your backend server is now running!*
 
