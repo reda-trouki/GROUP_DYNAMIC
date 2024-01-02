@@ -227,6 +227,46 @@ async function getIncompletedElementsOfUser(req, res) {
     }
 }
 
+// Function to mark a topic as completed
+async function markTopicCompleted(req, res) {
+    try {
+        console.log(req.body)
+        const AuthUser = req.user;
+        const user = await User.findById(AuthUser._id);
+        const { elementId, topicIndex} = req.body;
+        if (!user) {
+            console.error('User not found');
+            return;
+        }
+
+        const elementIndex = user.progress.findIndex(
+            (element) => element.elementId.toString() === elementId
+        );
+
+        if (elementIndex === -1) {
+            console.error('Element not found in user progress');
+            return;
+        }
+
+        const completedTopics = user.progress[elementIndex].completedTopics;
+
+        if (topicIndex < 0 || topicIndex >= completedTopics.length) {
+            console.error('Invalid topic index');
+            return;
+        }
+
+        // Mark the topic as completed
+        completedTopics[topicIndex] = true;
+
+        // Save the updated user
+        await user.save();
+
+        console.log('Topic marked as completed successfully');
+        res.status(200).json({message:"Topic Updated successfully"});
+    } catch (error) {
+        console.error('Error marking topic as completed:', error);
+    }
+}
 
 
-module.exports = { login, register, getCompletedElementsOfUser, getIncompletedElementsOfUser };
+module.exports = { login, register, getCompletedElementsOfUser, getIncompletedElementsOfUser, markTopicCompleted };
