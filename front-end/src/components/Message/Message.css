@@ -1,0 +1,9 @@
+.MessageContent {
+    @apply fixed left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[400px] rounded-md text-center p-4 text-black font-semibold text-lg flex items-center justify-center shadow-md
+  }
+  .alert-success {
+    @apply bg-green-200
+  }
+  .alert-failed{
+    @apply bg-red-200
+  }

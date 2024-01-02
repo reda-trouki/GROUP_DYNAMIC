@@ -18,7 +18,8 @@ const Section = () => {
   const [selectedTopic, setSelectedTopic] = useState()
   const accessToken = useSelector((state) => state.accessToken);
   const topicsRef = useRef();
-  useEffect(() => {
+  const getCourse = () => {
+    useEffect(() => {
     fetch(`http://localhost:5000/api/v1/elements/${id}`, {
       headers: {
         Accept: "application/json",
@@ -32,6 +33,8 @@ const Section = () => {
         setSelectedTopic(data.topics[0])
       });
   }, [id]);
+}
+  getCourse();
   const toggleTopics = (isOpen) => {
     topicsRef.current.classList.toggle("opened", isOpen);
     topicsRef.current.classList.toggle("closed", !isOpen);
@@ -74,7 +77,11 @@ const Section = () => {
             <div className="flex-grow flex flex-col gap-4 ">
               {course.topics?.map((topic) => (
                 <div
-                  className={`${selectedTopic.title==topic.title ?`bg-blue-300 text-white`:`bg-gray-100 `} cursor-pointer w-full p-4 rounded-md shadow-md flex items-center gap-4 hover:shadow-lg `}
+                  className={`${
+                    selectedTopic.title == topic.title
+                      ? `bg-blue-300 text-white`
+                      : `bg-gray-100 `
+                  } cursor-pointer w-full p-4 rounded-md shadow-md flex items-center gap-4 hover:shadow-lg `}
                   key={topic._id}
                   onClick={() => setSelectedTopic(topic)}
                 >
@@ -90,11 +97,11 @@ const Section = () => {
             </div>
           </div>
           <div className="w-full">
-            <Content element={course.title} topic={selectedTopic} />
+            <Content getCourse element={course} topic={selectedTopic} />
           </div>
         </div>
       ) : (
-        <Loading/>
+        <Loading />
       )}
     </div>
   );

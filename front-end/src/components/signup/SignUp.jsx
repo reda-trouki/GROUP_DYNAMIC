@@ -3,6 +3,7 @@ import google from "../../assets/google.png";
 import { NavLink } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
+import { setUser } from "../../store/store";
 
 const SignUp = ({ setAccessToken }) => {
   const [email, setEmail] = useState("");
@@ -40,6 +41,7 @@ const SignUp = ({ setAccessToken }) => {
           setMessage(data.message);
 
           dispatch(setAccessToken(data.accessToken));
+          dispatch(setUser(data.user))
 
           // Redirect to another page or perform any other action after login
           navigate("/courses/elements");

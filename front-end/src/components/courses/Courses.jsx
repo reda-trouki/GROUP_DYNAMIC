@@ -3,15 +3,19 @@ import {useState} from 'react';
 import profile from '../../assets/profile.png';
 import { Outlet, NavLink, useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import coin from '../../assets/star.png'
 import "./Courses.css";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
 const Courses = ({setAccessToken}) => {
+
   const [showMenu, setShowMenu] = useState(false);
+  const [user, setUser] = useState(useSelector((state) => state.user));
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const handleLogout =() =>{
     dispatch(setAccessToken(null));
+    dispatch(setUser(null));
     navigate('/auth/login');
   }
   return (
@@ -25,9 +29,13 @@ const Courses = ({setAccessToken}) => {
           onClick={() => setShowMenu(!showMenu)}
           className="flex items-center gap-2 px-2 py-1 hover:bg-gray-100"
         >
+          <div className="flex items-center gap-1">
+            <span className="font-semibold">100</span>
+            <img className="w-6" src={coin} alt="coin" />
+          </div>
           <div className="flex items-center gap-3">
             <img className="w-10" src={profile} alt="user" />
-            <p className="font-medium">Reda Trouki</p>
+            <p className="font-medium">{user._doc.userName}</p>
           </div>
           <div>
             {!showMenu ? (

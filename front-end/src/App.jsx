@@ -20,6 +20,7 @@ import { store, setAccessToken } from "./store/store";
 import { useSelector } from "react-redux";
 import "typeface-roboto";
 import './App.css';
+import QuizApp from "./components/quiz/QuizApp";
 function ProtectedRoute({ children }) {
   const token = useSelector((state) => state.accessToken);
 
@@ -43,6 +44,7 @@ const routes = createBrowserRouter(
           element={<SignUp setAccessToken={setAccessToken} />}
         />
       </Route>
+      
       <Route
         path="courses"
         element={
@@ -51,6 +53,7 @@ const routes = createBrowserRouter(
           </ProtectedRoute>
         }
       >
+        <Route path="quiz/:name" element={<QuizApp/>}/>
         <Route path="elements" element={<Elements />}>
           <Route index element={<InProgress />} />
           <Route path="inProgress" element={<InProgress />} />
