@@ -1,0 +1,469 @@
+[{
+  "_id": {
+    "$oid": "65922661a1a1e8696d53be11"
+  },
+  "userName": "Reda Trouki",
+  "email": "reda.trouki@example.com",
+  "password": "$2b$10$ghsFYrnMRwhCmiw2wAMsDub3qoPh96FqMgMR591dDUYZGoK//n/lu",
+  "refreshToken": "refresh_token_reda",
+  "progress": [
+    {
+      "elementId": {
+        "$oid": "657f27746e0a685ebfd2d893"
+      },
+      "completedTopics": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "elementId": {
+        "$oid": "657f27746e0a685ebfd2d894"
+      },
+      "completedTopics": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "elementId": {
+        "$oid": "657f27746e0a685ebfd2d895"
+      },
+      "completedTopics": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "elementId": {
+        "$oid": "657f27746e0a685ebfd2d896"
+      },
+      "completedTopics": [
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "elementId": {
+        "$oid": "657f27746e0a685ebfd2d897"
+      },
+      "completedTopics": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "elementId": {
+        "$oid": "657f27746e0a685ebfd2d898"
+      },
+      "completedTopics": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "elementId": {
+        "$oid": "657f27746e0a685ebfd2d899"
+      },
+      "completedTopics": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "65922661a1a1e8696d53be12"
+  },
+  "userName": "Imad Belattar",
+  "email": "imad.belattar@example.com",
+  "password": "hashed_password_imad",
+  "refreshToken": "refresh_token_imad",
+  "progress": [
+    {
+      "elementId": {
+        "$oid": "657f27746e0a685ebfd2d893"
+      },
+      "completedTopics": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "elementId": {
+        "$oid": "657f27746e0a685ebfd2d894"
+      },
+      "completedTopics": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "elementId": {
+        "$oid": "657f27746e0a685ebfd2d895"
+      },
+      "completedTopics": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "elementId": {
+        "$oid": "657f27746e0a685ebfd2d896"
+      },
+      "completedTopics": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "elementId": {
+        "$oid": "657f27746e0a685ebfd2d897"
+      },
+      "completedTopics": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "elementId": {
+        "$oid": "657f27746e0a685ebfd2d898"
+      },
+      "completedTopics": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "elementId": {
+        "$oid": "657f27746e0a685ebfd2d899"
+      },
+      "completedTopics": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "65922661a1a1e8696d53be13"
+  },
+  "userName": "Adil Ait Taleb",
+  "email": "adil.aittaleb@example.com",
+  "password": "hashed_password_adil",
+  "refreshToken": "refresh_token_adil",
+  "progress": [
+    {
+      "elementId": {
+        "$oid": "657f27746e0a685ebfd2d893"
+      },
+      "completedTopics": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "elementId": {
+        "$oid": "657f27746e0a685ebfd2d894"
+      },
+      "completedTopics": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "elementId": {
+        "$oid": "657f27746e0a685ebfd2d895"
+      },
+      "completedTopics": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "elementId": {
+        "$oid": "657f27746e0a685ebfd2d896"
+      },
+      "completedTopics": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "elementId": {
+        "$oid": "657f27746e0a685ebfd2d897"
+      },
+      "completedTopics": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "elementId": {
+        "$oid": "657f27746e0a685ebfd2d898"
+      },
+      "completedTopics": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "elementId": {
+        "$oid": "657f27746e0a685ebfd2d899"
+      },
+      "completedTopics": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "65922a73d271bf287909cab4"
+  },
+  "userName": "rr tt",
+  "email": "rr@exemple.com",
+  "password": "$2b$10$ghsFYrnMRwhCmiw2wAMsDub3qoPh96FqMgMR591dDUYZGoK//n/lu",
+  "refreshToken": "",
+  "progress": [],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "659240461abca3159c7b93bb"
+  },
+  "userName": "test test",
+  "email": "test@test.com",
+  "password": "$2b$10$8At5vli0yo/IOv1Xszb9V.DVFXY5C/e1S3hH432fE4RovK/eg1PxG",
+  "refreshToken": "",
+  "progress": [
+    {
+      "elementId": {
+        "$oid": "657f27746e0a685ebfd2d893"
+      },
+      "completedTopics": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "_id": {
+        "$oid": "659240461abca3159c7b93bd"
+      }
+    },
+    {
+      "elementId": {
+        "$oid": "657f27746e0a685ebfd2d894"
+      },
+      "completedTopics": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "_id": {
+        "$oid": "659240461abca3159c7b93be"
+      }
+    },
+    {
+      "elementId": {
+        "$oid": "657f27746e0a685ebfd2d895"
+      },
+      "completedTopics": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "_id": {
+        "$oid": "659240461abca3159c7b93bf"
+      }
+    },
+    {
+      "elementId": {
+        "$oid": "657f27746e0a685ebfd2d896"
+      },
+      "completedTopics": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "_id": {
+        "$oid": "659240461abca3159c7b93c0"
+      }
+    },
+    {
+      "elementId": {
+        "$oid": "657f27746e0a685ebfd2d897"
+      },
+      "completedTopics": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "_id": {
+        "$oid": "659240461abca3159c7b93c1"
+      }
+    },
+    {
+      "elementId": {
+        "$oid": "657f27746e0a685ebfd2d898"
+      },
+      "completedTopics": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "_id": {
+        "$oid": "659240461abca3159c7b93c2"
+      }
+    },
+    {
+      "elementId": {
+        "$oid": "657f27746e0a685ebfd2d899"
+      },
+      "completedTopics": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "_id": {
+        "$oid": "659240461abca3159c7b93c3"
+      }
+    }
+  ],
+  "__v": 0
+}]

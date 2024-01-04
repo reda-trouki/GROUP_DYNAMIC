@@ -1,0 +1,343 @@
+[{
+  "_id": {
+    "$oid": "657f27ef6e0a685ebfd2d89c"
+  },
+  "title": "Introduction to Decision Making",
+  "number": 1
+},
+{
+  "_id": {
+    "$oid": "657f27ef6e0a685ebfd2d89d"
+  },
+  "title": "Understanding Group Dynamics",
+  "number": 2
+},
+{
+  "_id": {
+    "$oid": "657f27ef6e0a685ebfd2d89e"
+  },
+  "title": "Communication is Key",
+  "number": 3
+},
+{
+  "_id": {
+    "$oid": "657f27ef6e0a685ebfd2d89f"
+  },
+  "title": "Define Goals and Objectives",
+  "number": 4
+},
+{
+  "_id": {
+    "$oid": "657f27ef6e0a685ebfd2d8a0"
+  },
+  "title": "Utilize Decision-Making Models",
+  "number": 5
+},
+{
+  "_id": {
+    "$oid": "657f27ef6e0a685ebfd2d8a1"
+  },
+  "title": "Encourage Constructive Conflict",
+  "number": 6
+},
+{
+  "_id": {
+    "$oid": "657f27ef6e0a685ebfd2d8a2"
+  },
+  "title": "Assign Roles and Responsibilities",
+  "number": 7
+},
+{
+  "_id": {
+    "$oid": "657f27ef6e0a685ebfd2d8a3"
+  },
+  "title": "Introduction to Communication",
+  "number": 1
+},
+{
+  "_id": {
+    "$oid": "657f27ef6e0a685ebfd2d8a4"
+  },
+  "title": "Understanding the Basics",
+  "number": 2
+},
+{
+  "_id": {
+    "$oid": "657f27ef6e0a685ebfd2d8a5"
+  },
+  "title": "Active Listening",
+  "number": 3
+},
+{
+  "_id": {
+    "$oid": "657f27ef6e0a685ebfd2d8a6"
+  },
+  "title": "Choose the Right Medium",
+  "number": 4
+},
+{
+  "_id": {
+    "$oid": "657f27ef6e0a685ebfd2d8a7"
+  },
+  "title": "Express Yourself Clearly",
+  "number": 5
+},
+{
+  "_id": {
+    "$oid": "657f27ef6e0a685ebfd2d8a8"
+  },
+  "title": "Adapt Your Communication Style",
+  "number": 6
+},
+{
+  "_id": {
+    "$oid": "657f27ef6e0a685ebfd2d8a9"
+  },
+  "title": "Seek and Provide Constructive Feedback",
+  "number": 7
+},
+{
+  "_id": {
+    "$oid": "657f27ef6e0a685ebfd2d8aa"
+  },
+  "title": "Introduction to Leadership",
+  "number": 1
+},
+{
+  "_id": {
+    "$oid": "657f27ef6e0a685ebfd2d8ab"
+  },
+  "title": "Set Clear Goals and Expectations",
+  "number": 2
+},
+{
+  "_id": {
+    "$oid": "657f27ef6e0a685ebfd2d8ac"
+  },
+  "title": "Delegate Wisely",
+  "number": 3
+},
+{
+  "_id": {
+    "$oid": "657f27ef6e0a685ebfd2d8ad"
+  },
+  "title": "Encourage Collaboration",
+  "number": 4
+},
+{
+  "_id": {
+    "$oid": "657f27ef6e0a685ebfd2d8ae"
+  },
+  "title": "Embrace Adaptability",
+  "number": 5
+},
+{
+  "_id": {
+    "$oid": "657f27ef6e0a685ebfd2d8af"
+  },
+  "title": "Provide Support and Guidance",
+  "number": 6
+},
+{
+  "_id": {
+    "$oid": "657f27ef6e0a685ebfd2d8b0"
+  },
+  "title": "Celebrate Achievements",
+  "number": 7
+},
+{
+  "_id": {
+    "$oid": "657f27ef6e0a685ebfd2d8b1"
+  },
+  "title": "Introduction to Conflict Management",
+  "number": 1
+},
+{
+  "_id": {
+    "$oid": "657f27ef6e0a685ebfd2d8b2"
+  },
+  "title": "Understand Different Perspectives",
+  "number": 2
+},
+{
+  "_id": {
+    "$oid": "657f27ef6e0a685ebfd2d8b3"
+  },
+  "title": "Establish Ground Rules for Communication",
+  "number": 3
+},
+{
+  "_id": {
+    "$oid": "657f27ef6e0a685ebfd2d8b4"
+  },
+  "title": "Promote a Collaborative Environment",
+  "number": 4
+},
+{
+  "_id": {
+    "$oid": "657f27ef6e0a685ebfd2d8b5"
+  },
+  "title": "Utilize Conflict Resolution Strategies",
+  "number": 5
+},
+{
+  "_id": {
+    "$oid": "657f27ef6e0a685ebfd2d8b6"
+  },
+  "title": "Encourage Emotional Intelligence",
+  "number": 6
+},
+{
+  "_id": {
+    "$oid": "657f27ef6e0a685ebfd2d8b7"
+  },
+  "title": "Learn from Conflicts",
+  "number": 7
+},
+{
+  "_id": {
+    "$oid": "657f27ef6e0a685ebfd2d8b8"
+  },
+  "title": "Introduction to Group Norms",
+  "number": 1
+},
+{
+  "_id": {
+    "$oid": "657f27ef6e0a685ebfd2d8b9"
+  },
+  "title": "The Role of Norms in Group Cohesion",
+  "number": 2
+},
+{
+  "_id": {
+    "$oid": "657f27ef6e0a685ebfd2d8ba"
+  },
+  "title": "Types of Group Norms",
+  "number": 3
+},
+{
+  "_id": {
+    "$oid": "657f27ef6e0a685ebfd2d8bb"
+  },
+  "title": "Establishing Norms in New Groups",
+  "number": 4
+},
+{
+  "_id": {
+    "$oid": "657f27ef6e0a685ebfd2d8bc"
+  },
+  "title": "Norms and Group Productivity",
+  "number": 5
+},
+{
+  "_id": {
+    "$oid": "657f27ef6e0a685ebfd2d8bd"
+  },
+  "title": "Addressing Norm Violations",
+  "number": 6
+},
+{
+  "_id": {
+    "$oid": "657f27ef6e0a685ebfd2d8be"
+  },
+  "title": "Group Norms and Organizational Culture",
+  "number": 7
+},
+{
+  "_id": {
+    "$oid": "657f27ef6e0a685ebfd2d8bf"
+  },
+  "title": "The Significance of Roles in Groups",
+  "number": 1
+},
+{
+  "_id": {
+    "$oid": "657f27ef6e0a685ebfd2d8c0"
+  },
+  "title": "Different Types of Group Roles",
+  "number": 2
+},
+{
+  "_id": {
+    "$oid": "657f27ef6e0a685ebfd2d8c1"
+  },
+  "title": "Role Allocation and Assignment",
+  "number": 3
+},
+{
+  "_id": {
+    "$oid": "657f27ef6e0a685ebfd2d8c2"
+  },
+  "title": "Adapting Roles in Changing Group Dynamics",
+  "number": 4
+},
+{
+  "_id": {
+    "$oid": "657f27ef6e0a685ebfd2d8c3"
+  },
+  "title": "Role Conflict and Resolution",
+  "number": 5
+},
+{
+  "_id": {
+    "$oid": "657f27ef6e0a685ebfd2d8c4"
+  },
+  "title": "Leadership and Follower Roles",
+  "number": 6
+},
+{
+  "_id": {
+    "$oid": "657f27ef6e0a685ebfd2d8c5"
+  },
+  "title": "Evaluation and Feedback on Role Performance",
+  "number": 7
+},
+{
+  "_id": {
+    "$oid": "657f27ef6e0a685ebfd2d8c6"
+  },
+  "title": "Understanding Group Size Dynamics",
+  "number": 1
+},
+{
+  "_id": {
+    "$oid": "657f27ef6e0a685ebfd2d8c7"
+  },
+  "title": "Small Group Dynamics",
+  "number": 2
+},
+{
+  "_id": {
+    "$oid": "657f27ef6e0a685ebfd2d8c8"
+  },
+  "title": "Medium-Sized Group Dynamics",
+  "number": 3
+},
+{
+  "_id": {
+    "$oid": "657f27ef6e0a685ebfd2d8c9"
+  },
+  "title": "Large Group Dynamics",
+  "number": 4
+},
+{
+  "_id": {
+    "$oid": "657f27ef6e0a685ebfd2d8ca"
+  },
+  "title": "Teamwork in Different Group Sizes",
+  "number": 5
+},
+{
+  "_id": {
+    "$oid": "657f27ef6e0a685ebfd2d8cb"
+  },
+  "title": "Scaling Strategies for Group Activities",
+  "number": 6
+},
+{
+  "_id": {
+    "$oid": "657f27ef6e0a685ebfd2d8cc"
+  },
+  "title": "Group Size and Decision-Making Processes",
+  "number": 7
+}]
